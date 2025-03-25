@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment for HTML Lists, images, Tables & Forms</title>
+    </head>
+    <body>
+        <hi>HTML Lists Assignment for PLP Program</hi>
+        <h3>Ordered Lists</h3>
+        <ol type="i" start="5">
+            <li>Software Engineering</li>
+            <li>Web Development</li>
+            <li>Python</li>
+            <li>Database</li>
+            <li>Startup Building</li>
+        </ol>
+        
+    
+        <h3>HTML Images</h3>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            <p>Your browser does not support the video tag.</p>
+        </video>
+        
+        <img src="song.jpg" alt="Image of two engineers working on site"  height="250" width="250">
+        <img src="https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="250" width="250">
+        <audio controls>
+            <source src="host.mp3" />
+          </audio>
+          
+
+    <h1>HTML Tables</h1>
+    <table border="1">
+        <caption>TABLE</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Sex</th>
+            </tr>
+            <tr>
+                <td>Adebayo Toheeb</td>
+                <td>block 331 lagos Nigeria</td>
+                <td>+2347067412852</td>
+                <td>adebayoajani23@gmail.com</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Chakin</td>
+                <td>1, whitehouse kenya</td>
+                <td>+254732408291</td>
+                <td>chakin@gmail.com</td>
+                <td>Male</td>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adebayo Toheeb</td>
+                <td>block 331 lagos Nigeri</td>
+                <td>+2347067412852</td>
+                <td>adebayoajani23@gmail.com</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Sex</th>
+        </tfoot>
+    </table>
+    <h1>HTML Forms </h1>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown Menu -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Membership Type:</label>
+        <input type="radio" id="basic" name="membership" value="basic" required>
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="membership" value="premium">
+        <label for="premium">Premium</label>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech">Technology</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+
+        <!-- Submit Button -->
+        <button type="submit" style="margin-top: 10px;">Validate</button>
+    </form>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h3>Steps to Complete Registration</h3>
+    <ol type="I">
+        <li>Enter your personal details.</li>
+        <li>Select your preferences.</li>
+        <li>Agree to the terms and conditions.</li>
+        <li>Submit the form.</li>
+    </ol>
+</body>
+</html>
